@@ -16,7 +16,7 @@ from flask import Flask, jsonify
 
 TELEGRAM_TOKEN ="8660833104:AAFNfu027VL0zymtPLOdSX-oz7A4zs3ol2E"
 
-PARENT_CHAT_ID = "690711648"
+PARENT_CHAT_ID = 690711648
 
 # ID сына добавим позднее через настройки Render
 SON_CHAT_ID = "1646548357"
