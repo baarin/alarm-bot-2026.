@@ -14,12 +14,12 @@ from flask import Flask, jsonify
 # НАСТРОЙКИ
 # ============================================================
 
-TELEGRAM_TOKEN = os.getenv("8660833104:AAFNfu027VL0zymtPLOdSX-oz7A4zs3ol2E", "").strip()
+TELEGRAM_TOKEN ="8660833104:AAFNfu027VL0zymtPLOdSX-oz7A4zs3ol2E"
 
-PARENT_CHAT_ID = int(os.getenv("PARENT_CHAT_ID", "690711648"))
+PARENT_CHAT_ID = "690711648"
 
 # ID сына добавим позднее через настройки Render
-SON_CHAT_ID = os.getenv("1646548357", "").strip()
+SON_CHAT_ID = "1646548357"
 
 TIMEZONE = ZoneInfo("Europe/Kyiv")
 
