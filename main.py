@@ -173,7 +173,11 @@ def send_reminder(reminder):
 def get_schedule(now):
     schedule = []
 
-    # Посуда ежедневно
+        # Посуда ежедневно
+    # Дополнительно в выходные в 12:00
+    if now.weekday() in (5, 6):
+        schedule.append((12, 0, "Пора помыть посуду!"))
+
     schedule.append((17, 0, "Пора помыть посуду!"))
     schedule.append((20, 0, "Пора помыть посуду!"))
 
